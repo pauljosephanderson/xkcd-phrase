@@ -1,0 +1,2 @@
+graft src/xkcd_phrase/lib/*
+global-exclude *__pycache__*

@@ -1,0 +1,44 @@
+[project]
+name = "xkcd-phrase"
+version = "1.0.0"
+authors = [
+	{ name = "Paul Anderson", email="p.anderson@iinet.net.au" },
+]	
+description="Generate secure multiword passphrases, inspired by XKCD"
+readme = "README.md"
+requires-python = ">=3.8"
+
+dependencies = [
+	'argcomplete',
+]
+
+keywords = ["xkcd", "passphrase" ]
+    classifiers=[
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Development Status :: 5 - Production/Stable",
+	"License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+	"License :: OSI Approved :: BSD License",
+    "Operating System :: OS Independent"
+    ]
+
+[project.urls]
+homepage = "https://github.com/pauljosephanderson/xkcd-phrase"
+repository = "https://github.com/pauljosephanderson/xkcd-phrase.git"
+"Bug Tracker" = "https://github.com/pauljosephanderson/xkcd-phrase/issues"
+
+[console_scripts]
+xkcd-phrase = "xkcd_phrase.xkcd_phrase:main"
+
+[project.entry-points.console_scripts]
+xkcd-phrase = "xkcd_phrase.xkcd_phrase:main"
+
+[build-system]
+requires = [
+    "setuptools>=61",
+    "wheel"
+]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+include-package-data = true
